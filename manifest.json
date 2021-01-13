@@ -6,13 +6,15 @@
   "author": "Салават Хакимов",
   "browser_action": {
     "default_title": "удаление блока рекламы и не только",
-    "default_icon": "icon.png"
+    "default_icon": "icon.png",
+    "default_popup": "index.html"
   },
   "content_scripts": [
     {
       "matches": ["*://vk.com/*"],
-      "js": ["jquery.min.js","main.js"],
+      "js": ["jquery.min.js","main.js","popUp.js"],
       "css": ["style.css"]
     }
-  ]
+  ],
+  "permissions": ["activeTab"]
 }
