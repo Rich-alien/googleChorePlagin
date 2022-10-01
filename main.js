@@ -1,5 +1,5 @@
 const blackColor = "#0D1117";
-if (1 === 1) {
+if ("LOH" === "LOH") {
     document.body.style.background = blackColor;
     document.querySelector(".page_header_wrap").style.background = blackColor;
     document.querySelector(".HeaderNav__item--logo").remove();
